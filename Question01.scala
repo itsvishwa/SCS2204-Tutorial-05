@@ -1,6 +1,6 @@
 def gcd(a: Int, b: Int): Int = b match{
     case 0 => a;
-    case x if x > b => gcd(b, a);
+    case x if x > a => gcd(b, a);
     case _ => gcd(b, a%b); 
 }
 
