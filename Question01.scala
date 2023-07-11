@@ -6,7 +6,7 @@ def gcd(a: Int, b: Int): Int = b match{
 
 def isPrime(p: Int, n: Int=2): Boolean = n match{
     case x if (x == p) => true;
-    case x if gcd(p, x) > 1 => false;
+    case x if gcd(p, x) >= 1 => false;
     case x => isPrime(p, x+1)
 }
 
